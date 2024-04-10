@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 import os
 
 
-data = pd.read_csv('Case 2 Data 2024.csv', index_col = 0)
+data = pd.read_csv('data.csv', index_col = 0)
 
 '''
 We recommend that you change your train and test split
@@ -33,10 +33,10 @@ class Allocator():
         asset_prices: np array of length 6, prices of the 6 assets on a particular day
         weights: np array of length 6, portfolio allocation for the next day
         '''
-        self.running_price_paths.append(asset_prices, ignore_index = True)
+        self.running_price_paths._append(asset_prices, ignore_index = True)
     
         ### TODO Implement your code here
-        weights = np.array([0,1,-1,0.5,0.1,-0.2])
+        weights = np.array([1/6, 1/6, 1/6, 1/6, 1/6, 1/6])
         
         return weights
 

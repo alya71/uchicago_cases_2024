@@ -30,7 +30,7 @@ class Allocator():
 
         self.lower_bound = -1
         self.upper_bound = 1
-        self.window_size = 50
+        self.window_size = 40
         self.method = 'SLSQP'
         
         # Do any preprocessing here -- do not touch running_price_paths, it will store the price path up to that data
